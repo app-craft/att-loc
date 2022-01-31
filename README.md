@@ -18,7 +18,7 @@ Manual add package to the ```manifest.json```.
 Or you can specify version you need
 ```
 "dependencies": {
-  "org.appegy.att-loc": "https://github.com/appegy/att-loc.git#1.0.0",
+  "org.appegy.att-loc": "https://github.com/appegy/att-loc.git#1.0.2",
   ...
 },
 ```
@@ -55,7 +55,7 @@ public class YourPostProcessor : IPostprocessBuildWithReport
             TransparencyDescriptionsAPI.SetAppTransparencyDefaultDescription(buildPath, "Default translation");
             
             // Set description for specific language
-            TransparencyDescriptionsAPI.SetAppTransparencyDescription(buildPath, SystemLanguage.Russian, "Some russian text");
+            TransparencyDescriptionsAPI.SetAppTransparencyDescription(buildPath, SystemLanguage.Belarusian, "Жыве Беларусь!");
         }
     }
 }
