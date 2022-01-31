@@ -19,14 +19,12 @@ namespace Appegy.Att.Localization
         [SettingsProvider]
         public static SettingsProvider CreateAttSettingsProvider()
         {
-            _linkedinIcon = AssetDatabase.LoadAssetAtPath<Texture2D>("Packages/org.appegy.att-loc/Images/LinkedIn.png");
-            _githubIcon = AssetDatabase.LoadAssetAtPath<Texture2D>("Packages/org.appegy.att-loc/Images/Github.png");
+            _linkedinIcon = AssetDatabase.LoadAssetAtPath<Texture2D>("Packages/com.appegy.ios-att-localization/Images/LinkedIn.png");
+            _githubIcon = AssetDatabase.LoadAssetAtPath<Texture2D>("Packages/com.appegy.ios-att-localization/Images/Github.png");
             _clearButtonStyle = new GUIContent("X", $"Clear translation and use {Default} instead");
             _resetButtonStyle = new GUIContent("R", "Revert translation to Default value");
             _linkedinContent = new GUIContent(_linkedinIcon);
             _githubContent = new GUIContent(_githubIcon);
-
-            Debug.Log(_linkedinIcon != null);
 
             var provider = new SettingsProvider($"Project/iOS ATT Localization", SettingsScope.Project)
             {

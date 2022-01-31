@@ -1,5 +1,5 @@
 # 📓 iOS App Tracking Transparency Localization for Unity
-[![openupm](https://img.shields.io/npm/v/org.appegy.att-loc?label=openupm&registry_uri=https://package.openupm.com)](https://openupm.com/packages/org.appegy.att-loc/)
+[![openupm](https://img.shields.io/npm/v/com.appegy.ios-att-localization?label=openupm&registry_uri=https://package.openupm.com)](https://openupm.com/packages/com.appegy.ios-att-localization/)
 
 ## Description
 ![alt](Images/Preview.png)
@@ -10,7 +10,7 @@ Provides localization of iOS App Tracking Transparency (ATT) descriptions. Perfe
 Manual add package to the ```manifest.json```.
 ```
 "dependencies": {
-  "org.appegy.att-loc": "https://github.com/appegy/att-loc.git",
+  "com.appegy.ios-att-localization": "https://github.com/appegy/ios-att-localization.git",
   ...
 },
 ```
@@ -18,14 +18,14 @@ Manual add package to the ```manifest.json```.
 Or you can specify version you need
 ```
 "dependencies": {
-  "org.appegy.att-loc": "https://github.com/appegy/att-loc.git#1.0.0",
+  "com.appegy.ios-att-localization": "https://github.com/appegy/ios-att-localization.git#1.0.0",
   ...
 },
 ```
 
-Or just use [OpenUPM](https://openupm.com/packages/org.appegy.att-loc/)
+Or just use [OpenUPM](https://openupm.com/packages/com.appegy.ios-att-localization/)
 ```
-openupm add org.appegy.att-loc
+openupm add com.appegy.ios-att-localization
 ```
 
 ## Project Settings
@@ -55,7 +55,7 @@ public class YourPostProcessor : IPostprocessBuildWithReport
             TransparencyDescriptionsAPI.SetAppTransparencyDefaultDescription(buildPath, "Default translation");
             
             // Set description for specific language
-            TransparencyDescriptionsAPI.SetAppTransparencyDescription(buildPath, SystemLanguage.Russian, "Some russian text");
+            TransparencyDescriptionsAPI.SetAppTransparencyDescription(buildPath, SystemLanguage.Belarusian, "Жыве Беларусь!");
         }
     }
 }
