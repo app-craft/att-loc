@@ -35,7 +35,7 @@ namespace Appegy.Att.Localization
                 SystemLanguage.Afrikaans => "AF",
                 SystemLanguage.Arabic => "AR",
                 SystemLanguage.Basque => "EU",
-                SystemLanguage.Belarusian => "BY",
+                SystemLanguage.Belarusian => "BE",
                 SystemLanguage.Bulgarian => "BG",
                 SystemLanguage.Catalan => "CA",
                 SystemLanguage.Chinese => "ZH",
